@@ -17,7 +17,7 @@ jobs:
         run: node --version
       
       - name: Install packages
-        run: yarn i
+        run: yarn 
       
       - name: Run ESlint
         run: yarn lint
@@ -37,7 +37,7 @@ jobs:
         run: node --version
       
       - name: Install packages
-        run: yarn --cwd ./client i
+        run: yarn --cwd ./client 
 
       - name: Run build
         run: yarn --cwd ./client build
