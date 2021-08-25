@@ -1,0 +1,13 @@
+{
+  "name": "cicd-github-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "RuoyuKlaus <klaus1201810802@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint":"eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
