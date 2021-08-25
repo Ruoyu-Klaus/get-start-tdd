@@ -1,16 +1,17 @@
 {
-  "name": "cicd-github-action",
+  "name": "client",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "RuoyuKlaus <klaus1201810802@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ."
+    "dev": "webpack --mode=development",
+    "build": "webpack --mode=production"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
-    "eslint": "^7.32.0",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.2",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0"
   }
