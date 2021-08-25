@@ -5,7 +5,7 @@
   "author": "RuoyuKlaus <klaus1201810802@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint ./client/src"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

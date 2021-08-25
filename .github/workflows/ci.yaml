@@ -21,6 +21,7 @@ jobs:
       
       - name: Run ESlint
         run: yarn lint
+        
   client:
     name: client code checkout
     runs-on: ubuntu-latest
