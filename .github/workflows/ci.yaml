@@ -12,6 +12,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14.17.0'
+        
       - name: checkout node version
         run: node --version
       
@@ -31,6 +32,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14.17.0'
+
+      - name: checkout node version
         run: node --version
       
       - name: Install packages
