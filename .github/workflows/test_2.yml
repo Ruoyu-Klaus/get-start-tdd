@@ -1,10 +1,15 @@
-name: Lint checkout
-
-on: [push]
+name: Test 2
+on:
+  workflow_run:
+    workflows: ["Lint checkout"]
+    branches: [main]
+    types: 
+      - completed
 
 jobs:
-  eslint:
-    name: Lint code base
+        
+  client:
+    name: client code checkout
     runs-on: ubuntu-latest
 
     steps:
@@ -14,15 +19,15 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14.17.0'
-        
+
       - name: checkout node version
         run: node --version
       
       - name: Install packages
-        run: yarn 
-      
-      - name: Run ESlint
-        run: yarn lint
+        run: yarn --cwd ./client 
+
+      - name: Run build
+        run: yarn --cwd ./client build
 
 
 
