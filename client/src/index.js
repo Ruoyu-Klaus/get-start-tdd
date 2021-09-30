@@ -1,11 +1,14 @@
 /*
- * @Author: your name
- * @Date: 2021-08-25 16:57:08
- * @LastEditTime: 2021-08-25 17:14:49
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \cicd-github-action\client\src\index.js
+ * @Author: Ruoyu
+ * @FilePath: /cicd-github-actions/client/src/index.js
  */
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-document.body.innerHTML = 'hhhhh,!';
-console.log('hello world!');
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);

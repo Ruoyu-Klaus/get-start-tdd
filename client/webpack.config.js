@@ -1,28 +1,38 @@
 /*
- * @Author: your name
- * @Date: 2021-08-25 16:59:35
- * @LastEditTime: 2021-08-25 17:11:29
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \cicd-github-action\client\webpack.config.js
+ * @Author: Ruoyu
+ * @FilePath: /cicd-github-actions/client/webpack.config.js
  */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
+  entry: './src/index.js',
+  mode: 'development',
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
         },
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-    }),
-  ],
+  output: {
+    path: path.resolve(__dirname, 'dist/'),
+    publicPath: '/dist/',
+    filename: 'bundle.js',
+  },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    port: 3000,
+    hot: true,
+  },
 };
