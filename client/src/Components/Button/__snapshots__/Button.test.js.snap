@@ -4,6 +4,6 @@ exports[`Button with default placeholder 1`] = `
 <button
   className="base primary middle"
 >
-  aa
+  Button Test
 </button>
 `;
