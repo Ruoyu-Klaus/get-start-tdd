@@ -1,0 +1,22 @@
+.base{
+  border:none;
+}
+
+.primary{
+  background:#1890ff;
+  color:#fff
+}
+.secondary{
+  background:#ff4d4f;
+}
+
+.large{
+  height: 40px;
+
+}
+.middle{
+  height: 30px;
+}
+.small{
+  height: 20px;
+}
