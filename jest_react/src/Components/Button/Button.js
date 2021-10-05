@@ -1,6 +1,6 @@
 /*
  * @Author: Ruoyu
- * @FilePath: /cicd-github-actions/client/src/Components/Button/Button.js
+ * @FilePath: /get-start-tdd/jest_react/src/Components/Button/Button.js
  */
 import React from 'react';
 import styles from './Button.module.css';
@@ -18,7 +18,7 @@ function Button(props) {
     small: size === 'small',
   });
 
-  return <button className={className}>{children}</button>;
+  return <button className={className}>{children || 'Button'}</button>;
 }
 
 export default Button;
