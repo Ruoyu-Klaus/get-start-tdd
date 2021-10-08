@@ -1,11 +1,11 @@
 /*
  * @Author: Ruoyu
- * @FilePath: /cicd-github-actions/client/src/App.js
+ * @FilePath: \get-start-tdd\jest_react\src\App.js
  */
 import React from 'react';
 import './App.css';
 
-import Button from './Components/Button/Button';
+import Button from '@components/Button/Button';
 
 function App() {
   return (

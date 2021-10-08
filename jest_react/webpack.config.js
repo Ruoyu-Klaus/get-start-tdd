@@ -1,6 +1,6 @@
 /*
  * @Author: Ruoyu
- * @FilePath: /cicd-github-actions/client/webpack.config.js
+ * @FilePath: \get-start-tdd\jest_react\webpack.config.js
  */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
@@ -27,6 +27,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist/'),
     publicPath: '/dist/',
     filename: 'bundle.js',
+  },
+  resolve: {
+    alias: {
+      '@components': path.resolve('src/Components'),
+    },
   },
   devServer: {
     static: {
