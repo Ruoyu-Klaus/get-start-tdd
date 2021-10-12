@@ -1,9 +1,8 @@
 /*
  * @Author: Ruoyu
- * @FilePath: /get-start-tdd/jest_react/src/Components/Button/Button.test.js
+ * @FilePath: \get-start-tdd\jest_react\src\Components\Button\Button.test.js
  */
 import React from 'react';
-import renderer from 'react-test-renderer';
 import Button from './Button';
 import { render, fireEvent, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
